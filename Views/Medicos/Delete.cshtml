@@ -1,0 +1,75 @@
+﻿@model CadastrarMedico.Models.Medicos
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Você tem certeza que deseja <strong>DELETAR</strong> esse registro?</h3>
+<div>
+    <h4>Medicos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Especialidade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Especialidade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cooperador)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cooperador)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UnidadeAtendimento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UnidadeAtendimento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AtendeSUS)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AtendeSUS)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FoiVisitado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FoiVisitado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TemKit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TemKit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.observacoes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.observacoes)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Voltar para a lista</a>
+    </form>
+</div>
